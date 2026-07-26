@@ -413,6 +413,14 @@ section { position: relative; }
   letter-spacing: 0.25em;
   color: var(--gold);
 }
+.pillar-time {
+  font-family: var(--f-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--ocean);
+  letter-spacing: 0.04em;
+  margin-top: -0.4rem;
+}
 .pillar-title {
   font-family: var(--f-serif);
   font-size: 1.5rem;
