@@ -141,7 +141,8 @@ body.menu-open .hamburger span:nth-child(3) { top: 11px; transform: rotate(-45de
 }
 body.menu-open .mobile-menu { transform: translateY(0); }
 .mobile-menu a {
-  font-family: var(--f-display);
+  font-family: var(--f-sans);
+  font-weight: 700;
   font-size: 2.2rem;
   letter-spacing: 0.04em;
   text-decoration: none;
@@ -389,7 +390,7 @@ section { position: relative; }
 .pillars-bg { background: var(--paper); }
 .pillars-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   margin-top: 4rem;
   background: var(--sand);
@@ -568,7 +569,8 @@ section { position: relative; }
   background: rgba(184, 148, 90, 0.05);
 }
 .process-n {
-  font-family: var(--f-display);
+  font-family: var(--f-sans);
+  font-weight: 800;
   font-size: 2.6rem;
   color: var(--coral);
   letter-spacing: 0.04em;
@@ -712,7 +714,8 @@ section { position: relative; }
   padding-left: 2rem;
 }
 .commercial-fact-n {
-  font-family: var(--f-display);
+  font-family: var(--f-sans);
+  font-weight: 800;
   font-size: clamp(3rem, 6vw, 5rem);
   color: var(--gold);
   letter-spacing: 0.03em;
@@ -767,7 +770,8 @@ section { position: relative; }
   color: var(--gold);
 }
 .contact-card-v {
-  font-family: var(--f-display);
+  font-family: var(--f-sans);
+  font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: 0.04em;
   line-height: 1.1;
@@ -796,7 +800,8 @@ section { position: relative; }
   flex-wrap: wrap;
 }
 .footer-brand {
-  font-family: var(--f-display);
+  font-family: var(--f-sans);
+  font-weight: 700;
   font-size: 1.8rem;
   letter-spacing: 0.05em;
   color: var(--paper);
