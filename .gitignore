@@ -9,5 +9,5 @@ correos*
 # Sistema
 .DS_Store
 
-# Wrangler (usamos Cloudflare Pages, no Workers)
-wrangler.toml
+# Wrangler credentials (el token va en ~/.zshrc, no aquí)
+.dev.vars
