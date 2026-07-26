@@ -28,4 +28,15 @@
   // ── año dinámico en el footer ─────────────────────────
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
+
+  // ── servicios acordeón ────────────────────────────────
+  document.querySelectorAll('.svc-trigger').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.svc-item');
+      const isOpen = item.classList.contains('is-open');
+      document.querySelectorAll('.svc-item').forEach(i => i.classList.remove('is-open'));
+      if (!isOpen) item.classList.add('is-open');
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
 })();

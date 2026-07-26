@@ -61,15 +61,15 @@ a { color: inherit; }
 }
 .brand {
   font-family: var(--f-sans);
-  font-size: 0.72rem;
-  letter-spacing: 0.32em;
+  font-size: 1.05rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-flex;
-  gap: 0.55em;
+  gap: 0.5em;
   align-items: baseline;
 }
-.brand b { font-weight: 400; }
+.brand b { font-weight: 700; }
 .brand i {
   font-family: var(--f-sans);
   font-style: normal;
@@ -86,8 +86,8 @@ a { color: inherit; }
 }
 .nav a {
   font-family: var(--f-sans);
-  font-size: 0.7rem;
-  letter-spacing: 0.18em;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 500;
   text-decoration: none;
@@ -599,69 +599,93 @@ section { position: relative; }
   white-space: nowrap;
 }
 
-/* ── SERVICIOS ──────────────────────── */
-.services-bg { background: var(--paper); }
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin-top: 4rem;
+/* ── SERVICIOS ACCORDION ────────────── */
+.services-bg { background: var(--pale); }
+
+.svc-accordion {
+  margin-top: 3.5rem;
+  border-top: 1px solid var(--rule);
 }
-.service {
-  padding: clamp(2rem, 3vw, 2.8rem);
-  background: var(--pale);
-  border: 1px solid var(--rule);
+.svc-item {
+  border-bottom: 1px solid var(--rule);
+}
+.svc-trigger {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 1.2rem;
+  padding: 2.2rem 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  color: var(--ink);
+  transition: color .2s;
 }
-.service-tag {
+.svc-trigger:hover { color: var(--ocean); }
+.svc-name {
   font-family: var(--f-sans);
-  font-size: 0.6rem;
-  letter-spacing: 0.25em;
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1;
+  flex: 1;
+  letter-spacing: -0.02em;
+}
+.svc-abbr {
+  font-family: var(--f-sans);
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--coral);
+  border: 1px solid var(--coral);
+  padding: 0.35em 0.75em;
+  flex-shrink: 0;
 }
-.service-title {
-  font-family: var(--f-serif);
-  font-size: 1.7rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: var(--ocean);
-  line-height: 1.15;
-}
-.service-desc {
-  font-size: 1.05rem;
+.svc-icon {
+  font-family: var(--f-sans);
+  font-size: 1.8rem;
   font-weight: 300;
-  line-height: 1.6;
-  color: #4a4540;
+  color: var(--ink);
+  transition: transform .3s ease;
+  width: 28px;
+  text-align: center;
+  flex-shrink: 0;
+  line-height: 1;
 }
-.service ul {
+.svc-item.is-open .svc-icon {
+  transform: rotate(45deg);
+}
+.svc-body {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .35s ease;
+}
+.svc-item.is-open .svc-body {
+  max-height: 500px;
+}
+.svc-list {
   list-style: none;
-  padding: 0;
+  padding: 0 0 2.8rem 0;
   display: flex;
   flex-direction: column;
-  gap: 0.55rem;
-  margin-top: 0.4rem;
-  border-top: 1px solid var(--rule);
-  padding-top: 1.2rem;
+  gap: 1rem;
+  max-width: 680px;
 }
-.service li {
-  font-size: 1rem;
+.svc-list li {
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.5;
   color: #3a3530;
-  padding-left: 1.2rem;
+  padding-left: 1.6rem;
   position: relative;
-  line-height: 1.4;
 }
-.service li::before {
-  content: '';
+.svc-list li::before {
+  content: '—';
   position: absolute;
   left: 0;
-  top: 0.55em;
-  width: 6px;
-  height: 6px;
-  background: var(--coral);
-  border-radius: 50%;
+  color: var(--coral);
+  font-weight: 400;
 }
 
 /* ── COMERCIAL / ANCLA ──────────────── */
