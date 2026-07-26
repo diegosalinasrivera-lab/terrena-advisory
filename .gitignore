@@ -1,0 +1,13 @@
+# LinkedIn assets y documentos internos
+LinkedIn*
+Uruguay*
+correos*
+*.xlsx
+*.pdf
+*.png
+
+# Sistema
+.DS_Store
+
+# Wrangler (usamos Cloudflare Pages, no Workers)
+wrangler.toml
