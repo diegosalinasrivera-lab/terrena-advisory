@@ -512,27 +512,36 @@ section { position: relative; }
 }
 
 /* ── TRAYECTORIA ────────────────────── */
-.trayectoria-bg { background: var(--pale); }
+.trayectoria-bg {
+  background-image: linear-gradient(rgba(10,8,6,0.62), rgba(10,8,6,0.62)),
+                    url('../images/terreno-barrio.jpg');
+  background-size: cover;
+  background-position: center 40%;
+  color: var(--paper);
+}
+.trayectoria-bg .section-label { color: var(--gold); }
+.trayectoria-bg .section-title { color: var(--paper); }
+.trayectoria-bg .divider { background: var(--coral); }
 
 .tray-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
   margin-top: 4rem;
-  border-top: 1px solid var(--rule);
-  border-left: 1px solid var(--rule);
+  border-top: 1px solid rgba(245, 240, 232, 0.2);
+  border-left: 1px solid rgba(245, 240, 232, 0.2);
 }
 .tray-stat {
   padding: clamp(2rem, 3vw, 3rem);
-  border-right: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+  border-right: 1px solid rgba(245, 240, 232, 0.2);
+  border-bottom: 1px solid rgba(245, 240, 232, 0.2);
 }
 .tray-n {
   font-family: var(--f-serif);
   font-size: clamp(3rem, 5vw, 4.5rem);
   font-weight: 700;
   line-height: 1;
-  color: var(--ocean);
+  color: var(--paper);
   letter-spacing: -0.03em;
 }
 .tray-l {
