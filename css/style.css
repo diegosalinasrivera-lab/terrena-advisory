@@ -61,12 +61,12 @@ a { color: inherit; }
 }
 .brand {
   font-family: var(--f-sans);
-  font-size: 1.05rem;
-  letter-spacing: 0.16em;
+  font-size: 2rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-flex;
-  gap: 0.5em;
+  gap: 0.4em;
   align-items: baseline;
 }
 .brand b { font-weight: 700; }
@@ -86,8 +86,8 @@ a { color: inherit; }
 }
 .nav a {
   font-family: var(--f-sans);
-  font-size: 0.82rem;
-  letter-spacing: 0.1em;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 500;
   text-decoration: none;
