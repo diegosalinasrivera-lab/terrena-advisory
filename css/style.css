@@ -427,6 +427,30 @@ section { position: relative; }
   line-height: 1.65;
   color: #4a4540;
 }
+.pillar-sub {
+  margin-top: auto;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--sand);
+}
+.pillar-sub-label {
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+.pillar-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.pillar-tag {
+  font-size: 0.7rem;
+  color: #4a4540;
+  border: 1px solid var(--sand);
+  padding: 3px 10px;
+  letter-spacing: 0.04em;
+}
 
 /* ── SOBRE ──────────────────────────── */
 .about-bg { background: var(--ocean); color: var(--paper); }
