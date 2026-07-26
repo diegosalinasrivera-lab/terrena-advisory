@@ -17,8 +17,8 @@
   --rule: rgba(15, 13, 10, 0.08);
 
   --f-display: 'Bebas Neue', sans-serif;
-  --f-serif: 'Playfair Display', serif;
-  --f-sans: 'Hanken Grotesk', sans-serif;
+  --f-serif: 'Onest', sans-serif;
+  --f-sans: 'Onest', sans-serif;
 
   --max: 1180px;
   --gutter: clamp(1.5rem, 4vw, 4rem);
@@ -28,6 +28,7 @@
 html { scroll-behavior: smooth; }
 body {
   font-family: var(--f-sans);
+  font-optical-sizing: auto;
   background: var(--pale);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
@@ -70,11 +71,12 @@ a { color: inherit; }
 }
 .brand b { font-weight: 400; }
 .brand i {
-  font-family: var(--f-serif);
-  font-style: italic;
-  letter-spacing: 0;
+  font-family: var(--f-sans);
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.06em;
   text-transform: none;
-  font-size: 0.95rem;
+  font-size: 0.82rem;
   opacity: 0.7;
 }
 .nav {
