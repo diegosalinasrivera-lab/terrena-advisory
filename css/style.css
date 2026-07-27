@@ -522,7 +522,7 @@ section { position: relative; }
 /* ── TRAYECTORIA ────────────────────── */
 .trayectoria-bg {
   background-image: linear-gradient(rgba(10,8,6,0.62), rgba(10,8,6,0.62)),
-                    url('../images/terreno-barrio.jpg');
+                    url('../images/terreno-barrio.webp');
   background-size: cover;
   background-position: center 40%;
   color: var(--paper);
