@@ -104,6 +104,14 @@ a { color: inherit; }
   opacity: 1;
 }
 .nav .nav-cta:hover { background: var(--coral); border-color: var(--coral); color: var(--paper); }
+.nav .nav-lang {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  opacity: 0.45;
+  padding: 0.28em 0.6em;
+  border: 1px solid currentColor;
+}
+.nav .nav-lang:hover { opacity: 1; }
 
 .hamburger {
   display: none;
