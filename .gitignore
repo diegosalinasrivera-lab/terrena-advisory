@@ -5,6 +5,9 @@ correos*
 *.xlsx
 *.pdf
 *.png
+!favicon*.png
+!apple-touch-icon.png
+!images/*.png
 
 # Sistema
 .DS_Store
