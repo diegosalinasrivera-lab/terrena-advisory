@@ -169,6 +169,18 @@ body.menu-open .mobile-menu { transform: translateY(0); }
   align-self: flex-start;
   color: var(--gold);
 }
+.mobile-menu .mobile-lang {
+  margin-top: 1.5rem;
+  font-family: var(--f-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.4em 0.8em;
+  border: 1px solid currentColor;
+  align-self: flex-start;
+  opacity: 0.6;
+}
 
 /* ── HERO ───────────────────────────── */
 .hero {
@@ -834,6 +846,15 @@ section { position: relative; }
   font-size: 0.95rem;
   font-weight: 300;
   color: rgba(245, 240, 232, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 0.45em;
+}
+.wa-icon {
+  width: 1em;
+  height: 1em;
+  fill: #25D366;
+  flex-shrink: 0;
 }
 
 /* ── FOTO FULL-BLEED ────────────────── */
